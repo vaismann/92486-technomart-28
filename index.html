@@ -8,8 +8,11 @@
 
 <body>
   <header>
-    <a><img src="img/logo-technomart.svg" width="100" height="50" alt="Техномарт"></a>
-    <span>Поиск:</span>
+    <a tabindex="0"><img src="img/logo-technomart.svg" width="100" height="50" alt="Техномарт"></a>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+      <input type="search" id="search-field" placeholder="Поиск" aria-label="Поле поиска">
+    </form>
     <a href="#">Закладки: 0</a>
     <a href="#">Корзина: 0</a>
     <a href="#">Оформить заказ</a>
@@ -20,7 +23,7 @@
     </div>
     <a href="#">Войти</a>
     <a href="#">Регистрация</a>
-    <nav>
+    <nav aria-label="Навигация по сайту">
       <ul>
         <li>
           <a>Главная</a>
@@ -48,7 +51,7 @@
   </header>
   <main>
     <section>
-      <h2>Предложения:</h2>
+      <h2 class="visually-hidden">Предложения:</h2>
       <div>
         <h3>Материалы</h3>
         <a href="#">На любой вкус</a>
@@ -102,7 +105,7 @@
     </section>
     <section>
       <h2>Популярные товары:</h2>
-      <a href="#">все поПулярные товары</a>
+      <a href="#">Все популярные товары</a>
       <ul>
         <li>
           <article>
@@ -150,42 +153,42 @@
       <a href="#">Все производители</a>
       <ul>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Bosch">
             <img src="img/bosch_company.jpg" width="220" height="145" alt="Bosch">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Makita">
             <img src="img/makita_company.jpg" width="220" height="145" alt="Makita">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Dewalt">
             <img src="img/dewalt_company.jpg" width="220" height="145" alt="Dewalt">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Интерскол">
             <img src="img/interskol_company.jpg" width="220" height="145" alt="Интерскол">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Hitachi">
             <img src="img/hitachi_company.jpg" width="220" height="145" alt="Hitachi">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Lg">
             <img src="img/lg_company.jpg" width="220" height="145" alt="Lg">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Aeg">
             <img src="img/aeg_company.jpg" width="220" height="145" alt="Aeg">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Сайт компании-производителя Metabo">
             <img src="img/metabo_company.jpg" width="220" height="145" alt="Metabo">
           </a>
         </li>
@@ -214,7 +217,7 @@
       </div>
     </section>
     <section>
-      <h2>КОМПАНИЯ «Техномарт»</h2>
+      <h2>Компания «Техномарт»</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
       <ul>
@@ -233,7 +236,7 @@
     <section>
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <a href="#">
+      <a href="#" aria-label="Наше местоположение на карте">
         <img src="img/map.jpg" width="300" height="158" alt="Карта">
       </a>
       <a href="#">Заблудились? Напишите нам!</a>
@@ -243,7 +246,7 @@
     <a><img src="img/logo-technomart.svg" width="100" height="50" alt="Техномарт"></a>
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-    <nav>
+    <nav aria-label="Навигация в подвале страницы">
       <ul>
         <li>
           <a href="#">Компания</a>
@@ -278,7 +281,7 @@
     </nav>
     <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
     <section>
-      <h3>Мы в социальных сетях</h3>
+      <h3 class="visually-hidden">Мы в социальных сетях</h3>
       <ul>
         <li>
           <a href="#">Vkontakte</a>
@@ -294,6 +297,27 @@
     <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
     <p>Разработано — <a href="https://up.htmlacademy.ru/htmlcss/28/project/technomart#technomart-3-5">htmlacademy.ru</a></p>
   </footer>
+  <div>
+    <a href="https://www.google.ru/maps" target="_blank"><img src="img/map-big.jpg" width="943" height="449" alt="Карта"></a>
+    <button type="button" name="close-btn" aria-label="Кнопка закрытия окна">
+      <img src="img/icon-close.svg">
+    </button>
+  </div>
+  <section class="modal-contact">
+    <h2 class="visually-hidden">Форма связи</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" name="contact-name" id="name-field" placeholder="Имя Фамилия">
+      <label for="email-field">Ваш e-mail:</label>
+      <input type="email" name="contact-email" id="email-field" placeholder="email@example.com">
+      <label for="comment-field">Текст письма:</label>
+      <textarea id="comment-field" placeholder="В свободной форме"></textarea>
+      <button type="submit">Оформить заказ</button>
+    </form>
+    <button type="button" name="close-btn" aria-label="Кнопка закрытия окна">
+      <img src="img/icon-close.svg">
+    </button>
+  </section>
 </body>
 
 </html>
