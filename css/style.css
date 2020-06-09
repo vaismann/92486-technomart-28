@@ -743,3 +743,7 @@ img {
 .modal-button {
   border: 0;
 }
+
+.modal-cart {
+  display: none;
+}
