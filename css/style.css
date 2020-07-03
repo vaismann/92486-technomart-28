@@ -538,16 +538,22 @@ img {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .product-list-item {
   display: block;
+  margin-right: 20px;
+  margin-bottom: 18px;
+}
+
+.product-list-item:last-child {
+  margin-right: 0;
 }
 
 .product-card {
-  width: 220px;
+  width: 218px;
   min-height: 318px;
+  border: 1px solid rgb(var(--basic-grey-light));
   font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -623,9 +629,9 @@ img {
 }
 
 .manufacturer-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .manufacturer-list-link {
@@ -668,16 +674,16 @@ img {
   flex-basis: 100%;
 }
 
-.services-accordion {
+.services-tabs {
   flex-basis: 240px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   background-image: url("../img/shadow.png");
   background-repeat: no-repeat;
 }
 
-.accordion-button {
+.tab-button {
+  width: 100%;
   padding: 13px 0 18px 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -689,14 +695,14 @@ img {
   cursor: pointer;
 }
 
-.accordion-button-active {
+.tab-button-active {
   box-shadow: none;
   color: var(--basic-grey);
   background-color: rgba(var(--basic-white), 1);
 }
 
-.accordion-button:hover,
-.accordion-button:focus {
+.tab-button:hover,
+.tab-button:focus {
   background-color: var(--basic-grey-darker);
   color: rgba(var(--basic-white), 1);
 }
@@ -705,24 +711,27 @@ img {
   flex-basis: 640px;
 }
 
+.services-description-card {
+  display: none;
+}
+
 .services-description-card h3,
 .services-description-card p {
   margin: 0;
 }
 
 .services-description-delivery {
+  display: block;
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
 }
 
 .services-description-warranty {
-  display: none;
   background-image: url("../img/warranty.png");
   background-repeat: no-repeat;
 }
 
 .services-description-credit {
-  display: none;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
 }
@@ -864,7 +873,8 @@ img {
   /*  background-color: var(--basic-grey);*/
 }
 
-.footer-logo img {
+.footer-logo {
+  display: block;
   margin-bottom: 22px;
 }
 

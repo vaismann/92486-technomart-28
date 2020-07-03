@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="top-bar">
       <div class="centered top-bar-inner">
-        <a class="nav-logo" tabindex="0"><img class="nav-logo-image" src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт"></a>
+        <a class="nav-logo"><img class="nav-logo-image" src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт"></a>
         <form action="https://echo.htmlacademy.ru" method="get" class="site-search">
           <label class="visually-hidden" for="search-field">Поиск по сайту</label>
           <input type="search" id="search-field" class="search-field" placeholder="Поиск" aria-label="Поле поиска">
@@ -22,7 +22,7 @@
           <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white" />
           </svg>
-          Закладки: 0
+          <span>Закладки: 0</span>
         </a>
         <a class="user-action" href="#">
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,14 +30,14 @@
             <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white" />
             <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
           </svg>
-          Корзина: 0
+          <span>Корзина: 0</span>
         </a>
         <a class="user-action user-action-accent" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="centered">
       <section class="header-mid">
-        <h1 class="header-heading">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+        <h1 class="header-heading">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
         <div class="header-address-section">
           <a class="header-address-phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
           <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -122,12 +122,14 @@
               </svg>
               <span class="visually-hidden">Следующий слайд</span>
             </button>
-            <button class="slider-switch">
-              <span class="visually-hidden">Первый слайд</span>
-            </button>
-            <button class="slider-switch">
-              <span class="visually-hidden">Второй слайд</span>
-            </button>
+            <div class="slider-switch-container">
+              <button class="slider-switch">
+                <span class="visually-hidden">Первый слайд</span>
+              </button>
+              <button class="slider-switch">
+                <span class="visually-hidden">Второй слайд</span>
+              </button>
+            </div>
           </div>
         </div>
         <div class="category category-offers">
@@ -248,10 +250,10 @@
         <div class="service-section-inner">
           <h2 class="content-heading section-heading">Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <div class="services-accordion">
-            <button class="accordion-button accordion-button-active">Доставка</button>
-            <button class="accordion-button">Гарантия</button>
-            <button class="accordion-button">Кредит</button>
+          <div class="services-tabs">
+            <button class="tab-button tab-button-active">Доставка</button>
+            <button class="tab-button">Гарантия</button>
+            <button class="tab-button">Кредит</button>
           </div>
           <div class="services-description">
             <div class="services-description-card services-description-delivery">
