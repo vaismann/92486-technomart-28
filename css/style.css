@@ -168,7 +168,7 @@ img {
 
 .search-field {
   box-sizing: border-box;
-  width: 100%;
+  width: 271px;
   min-height: 42px;
   padding-top: 9px;
   padding-right: 9px;
@@ -203,11 +203,21 @@ img {
 }
 
 .user-action {
-  flex-basis: 150px;
-  padding: 9px 0;
+  padding: 9px 10px;
   text-align: center;
   color: rgba(var(--basic-white), 1);
   transition: color 0.3s ease, background-color 0.3s ease;
+}
+.user-action-bookmark {
+  flex-basis: 141px;
+}
+
+.user-action-cart {
+  flex-basis: 118px;
+}
+
+.user-action-order {
+  flex-basis: 130px;
 }
 
 .user-action svg {
@@ -275,14 +285,14 @@ img {
 .header-address-phone {
   display: block;
   padding-top: 3px;
-  padding-right: 0;
+  padding-right: 19px;
   padding-bottom: 3px;
-  padding-left: 39px;
+  padding-left: 19px;
   border: 3px solid rgb(var(--basic-white));
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
-  align-items: center;
+  text-align: center;
   color: var(--basic-red);
 }
 
