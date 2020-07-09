@@ -86,12 +86,12 @@
     <div class="centered">
       <section class="offer-section">
         <h2 class="visually-hidden">Предложения:</h2>
-        <div class="category category-materials">
+        <div class="category category-materials new-label">
           <h3>Материалы</h3>
           <a class="site-button category-button" href="#">На любой вкус</a>
         </div>
         <div class="category category-instruments">
-          <h3>Инструменты</h3>
+          <h3>Инструмент</h3>
           <a class="site-button category-button" href="#">На все случаи</a>
         </div>
         <div class="category category-technics">
@@ -138,7 +138,7 @@
               <button class="slider-switch">
                 <span class="visually-hidden">Первый слайд</span>
               </button>
-              <button class="slider-switch">
+              <button class="slider-switch slider-switch-current">
                 <span class="visually-hidden">Второй слайд</span>
               </button>
             </div>
@@ -160,7 +160,7 @@
         </div>
         <ul class="popular-product-list content-list">
           <li class="product-list-item">
-            <article class="product-card" tabindex="0">
+            <article class="product-card new-label" tabindex="0">
               <div class="product-card-info">
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 9000</h4>
                 <img class="product-card-photo" src="img/snippet-32961.jpg" width="144" height="128" alt="Фотография товара">
@@ -208,7 +208,7 @@
             </article>
           </li>
           <li class="product-list-item">
-            <article class="product-card" tabindex="0">
+            <article class="product-card new-label" tabindex="0">
               <div class="product-card-info">
                 <h4 class="product-card-title">Перфоратор BOSCH BFG 2000</h4>
                 <img class="product-card-photo" src="img/snippet-18927.jpg" width="144" height="128" alt="Фотография товара">
@@ -336,84 +336,91 @@
     </div>
   </main>
   <footer class="site-footer">
-    <div class="centered">
-      <div class="footer-container">
-        <div class="footer-info">
-          <a class="footer-logo"><img src="img/logo.svg" width="220" height="68" alt="Техномарт"></a>
-          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="footer-tel" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-        </div>
-        <nav class="footer-nav" aria-label="Навигация по сайту">
-          <ul class="footer-nav-list content-list">
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Компания</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Новости</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Доставка</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="footer-nav-list content-list">
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Материалы</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Техника</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Инструмент</a>
-            </li>
-            <li class="footer-nav-list-item">
-              <a class="footer-nav-list-link" href="#">Спецпредложения</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="bottom-bar">
-        <p class="bottom-bar-terms">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-        <section class="social-network">
-          <h3 class="visually-hidden">Мы в социальных сетях</h3>
-          <ul class="social-network-list content-list">
-            <li class="social-network-list-item">
-              <a class="social-network-list-link" href="#">
-                <span class="visually-hidden">Vkontakte</span>
-                <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.138 12.51C17.094 12.201 18.318 14.55 19.621 15.449C20.599 16.13 21.348 15.983 21.348 15.983L24.821 15.933C24.821 15.933 26.636 15.821 25.778 14.379C25.707 14.259 25.275 13.31 23.193 11.357C21.016 9.31398 21.311 9.64498 23.932 6.11298C25.529 3.95998 26.168 2.64498 25.968 2.08498C25.776 1.54598 24.603 1.68598 24.603 1.68598L20.69 1.71298C20.309 1.71398 19.986 1.83198 19.839 2.22798C19.836 2.23198 19.218 3.89398 18.394 5.30698C16.653 8.29598 15.958 8.45498 15.67 8.26798C15.009 7.83498 15.176 6.53098 15.176 5.60398C15.176 2.70698 15.608 1.49898 14.33 1.18698C13.903 1.08298 13.591 1.01498 12.502 1.00498C11.11 0.983976 9.928 1.00498 9.258 1.33398C8.813 1.55698 8.472 2.04598 8.679 2.07398C8.939 2.10898 9.522 2.23398 9.834 2.65998C10.235 3.21198 10.223 4.44898 10.223 4.44898C10.223 4.44898 10.452 7.85998 9.683 8.28298C9.155 8.57298 8.433 7.98098 6.88 5.26698C6.087 3.87898 5.488 2.34498 5.488 2.34498C5.488 2.34498 5.372 2.05998 5.162 1.90398C4.912 1.71898 4.562 1.65998 4.562 1.65998L0.848 1.68398C0.848 1.68398 0.29 1.69998 0.0850002 1.94598C-0.0969998 2.16398 0.0700002 2.61398 0.0700002 2.61398C0.0700002 2.61398 2.979 9.49498 6.273 12.961C9.293 16.143 12.725 15.932 12.725 15.932H14.28C14.28 15.932 14.749 15.878 14.989 15.62C15.213 15.38 15.203 14.929 15.203 14.929C15.203 14.929 15.172 12.82 16.138 12.51Z" fill="white" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-network-list-item">
-              <a class="social-network-list-link" href="#">
-                <span class="visually-hidden">Facebook</span>
-                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
-                </svg></a>
-            </li>
-            <li class="social-network-list-item">
-              <a class="social-network-list-link" href="#">
-                <span class="visually-hidden">Instagram</span>
-                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <div class="bottom-bar-info">
-          <p class="bottom-bar-contact">Обратная связь: <a class="bottom-bar-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="bottom-bar-copyright">Разработано — <a class="bottom-bar-link" href="https://up.htmlacademy.ru/htmlcss/28/project/technomart#technomart-3-5">htmlacademy.ru</a></p>
+    <div class="footer-top">
+      <div class="centered">
+        <div class="footer-top-inner">
+          <div class="footer-info">
+            <a class="footer-logo"><img src="img/logo.svg" width="220" height="68" alt="Техномарт"></a>
+            <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="footer-tel" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+          </div>
+          <nav class="footer-nav" aria-label="Навигация по сайту">
+            <ul class="footer-nav-list content-list">
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Компания</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Новости</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="catalog.html">Каталог</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="footer-nav-list content-list">
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Материалы</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Техника</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Инструмент</a>
+              </li>
+              <li class="footer-nav-list-item">
+                <a class="footer-nav-list-link" href="#">Спецпредложения</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </div>
+    <div class="bottom-bar">
+      <div class="centered">
+        <div class="bottom-bar-inner">
+          <p class="bottom-bar-terms">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+          <section class="social-network">
+            <h3 class="visually-hidden">Мы в социальных сетях</h3>
+            <ul class="social-network-list content-list">
+              <li class="social-network-list-item">
+                <a class="social-network-list-link" href="#">
+                  <span class="visually-hidden">Vkontakte</span>
+                  <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.138 12.51C17.094 12.201 18.318 14.55 19.621 15.449C20.599 16.13 21.348 15.983 21.348 15.983L24.821 15.933C24.821 15.933 26.636 15.821 25.778 14.379C25.707 14.259 25.275 13.31 23.193 11.357C21.016 9.31398 21.311 9.64498 23.932 6.11298C25.529 3.95998 26.168 2.64498 25.968 2.08498C25.776 1.54598 24.603 1.68598 24.603 1.68598L20.69 1.71298C20.309 1.71398 19.986 1.83198 19.839 2.22798C19.836 2.23198 19.218 3.89398 18.394 5.30698C16.653 8.29598 15.958 8.45498 15.67 8.26798C15.009 7.83498 15.176 6.53098 15.176 5.60398C15.176 2.70698 15.608 1.49898 14.33 1.18698C13.903 1.08298 13.591 1.01498 12.502 1.00498C11.11 0.983976 9.928 1.00498 9.258 1.33398C8.813 1.55698 8.472 2.04598 8.679 2.07398C8.939 2.10898 9.522 2.23398 9.834 2.65998C10.235 3.21198 10.223 4.44898 10.223 4.44898C10.223 4.44898 10.452 7.85998 9.683 8.28298C9.155 8.57298 8.433 7.98098 6.88 5.26698C6.087 3.87898 5.488 2.34498 5.488 2.34498C5.488 2.34498 5.372 2.05998 5.162 1.90398C4.912 1.71898 4.562 1.65998 4.562 1.65998L0.848 1.68398C0.848 1.68398 0.29 1.69998 0.0850002 1.94598C-0.0969998 2.16398 0.0700002 2.61398 0.0700002 2.61398C0.0700002 2.61398 2.979 9.49498 6.273 12.961C9.293 16.143 12.725 15.932 12.725 15.932H14.28C14.28 15.932 14.749 15.878 14.989 15.62C15.213 15.38 15.203 14.929 15.203 14.929C15.203 14.929 15.172 12.82 16.138 12.51Z" fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network-list-item">
+                <a class="social-network-list-link" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+                  </svg></a>
+              </li>
+              <li class="social-network-list-item">
+                <a class="social-network-list-link" href="#">
+                  <span class="visually-hidden">Instagram</span>
+                  <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <div class="bottom-bar-info">
+            <p class="bottom-bar-contact">Обратная связь: <a class="bottom-bar-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p class="bottom-bar-copyright">Разработано — <a class="bottom-bar-link" href="https://up.htmlacademy.ru/htmlcss/28/project/technomart#technomart-3-5">htmlacademy.ru</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-  <div class="modal modal-map">
+  <div class="modal modal-map modal-map-opened">
     <a href="https://www.google.ru/maps" target="_blank"><img src="img/map-big.jpg" width="943" height="449" alt="Карта"></a>
     <button class="modal-close-btn" type="button" name="close-btn" aria-label="Кнопка закрытия окна">
       <img src="img/icon-close.svg">
@@ -421,14 +428,24 @@
   </div>
   <section class="modal modal-contact">
     <h2 class="visually-hidden">Форма связи</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label class="modal-contact-label" for="name-field">Ваше имя:</label>
-      <input class="modal-contact-input" type="text" name="contact-name" id="name-field" placeholder="Имя Фамилия">
-      <label class="modal-contact-label" for="email-field">Ваш e-mail:</label>
-      <input class="modal-contactl-input" type="email" name="contact-email" id="email-field" placeholder="email@example.com">
-      <label class="modal-contact-label" for="comment-field">Текст письма:</label>
-      <textarea class="modal-contact-input" id="comment-field" placeholder="В свободной форме"></textarea>
-      <button class="site-button modal-button" type="submit">Отправить</button>
+    <form class="modal-contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-contact-fields">
+        <div class="modal-contact-field">
+          <label class="modal-contact-label" for="name-field">Ваше имя:</label>
+          <input class="modal-contact-input" type="text" name="contact-name" id="name-field" placeholder="Имя Фамилия">
+        </div>
+        <div class="modal-contact-field">
+          <label class="modal-contact-label" for="email-field">Ваш e-mail:</label>
+          <input class="modal-contact-input" type="email" name="contact-email" id="email-field" placeholder="email@example.com">
+        </div>
+        <div class="modal-contact-field-full">
+          <label class="modal-contact-label" for="comment-field">Текст письма:</label>
+          <textarea class="modal-contact-comment" id="comment-field" placeholder="В свободной форме"></textarea>
+        </div>
+      </div>
+      <div class="modal-contact-submit">
+        <button class="site-button modal-button" type="submit">Отправить</button>
+      </div>
     </form>
     <button class="modal-close-btn" type="button" name="close-btn" aria-label="Кнопка закрытия окна">
       <img src="img/icon-close.svg">
