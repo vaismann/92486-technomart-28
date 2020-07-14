@@ -862,7 +862,7 @@ img {
 
 .product-price-button {
   position: relative;
-  min-width: 121px;
+  min-width: 109px;
   padding: 10px;
   border-radius: 3px;
 }
@@ -871,7 +871,7 @@ img {
   content: '';
   position: absolute;
   top: 0;
-  right: -19px;
+  right: -30px;
   width: 0;
   height: 0;
   border: 19px solid #fff;
