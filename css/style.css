@@ -94,6 +94,7 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
   color: rgba(var(--basic-white), 1);
   background-color: var(--basic-red);
 }
